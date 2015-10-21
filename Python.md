@@ -15,3 +15,6 @@ for event, elem in etree.iterparse('XML file', tag='some tag'):
   if event == 'end':
     elem.clear()
 ```
+### Make a copy of list
+1. use slice. `list_new = list_old[:]`
+2. use `list()` function. `list_new = list(list_old)`
